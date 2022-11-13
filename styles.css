@@ -1,9 +1,9 @@
-body .parts2, body .parts1 {
+body .parts4, body .parts3, body .parts2, body .parts1 {
   width: 100%;
   height: auto;
 }
 
-body .parts2 .subtitle, body .parts1 .subtitle {
+body .parts4 .subtitle, body .parts3 .subtitle, body .parts2 .subtitle, body .parts1 .subtitle {
   width: 100%;
   height: 100%;
   font-size: 100px;
@@ -24,6 +24,10 @@ body .parts2 .subtitle, body .parts1 .subtitle {
 @font-face {
   font-family: specialFont;
   src: url(scss/font.ttf);
+}
+@font-face {
+  font-family: fontText;
+  src: url(scss/Figerona-VF.ttf);
 }
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -169,13 +173,13 @@ body .parts2 .skewed .text h3 {
   font-weight: 100;
   padding-top: 5%;
 }
-body .parts2 .skewed .text p {
+body .parts2 .skewed .text .days {
   width: 100%;
   font-size: 19px;
   padding-left: 2%;
 }
 @media screen and (max-width: 768px) {
-  body .parts2 .skewed .text p {
+  body .parts2 .skewed .text .days {
     padding: 7% 2%;
   }
 }
@@ -247,4 +251,97 @@ body .parts2 .green-link {
   border-radius: 4px;
   color: #fff;
   text-decoration: none;
+}
+body .parts3 {
+  background-image: linear-gradient(#464646, #6A6A6A);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .parts3 .subtitle {
+  padding-top: 1.2em;
+}
+body .parts3 .travel-img {
+  width: min(1400px, 100%);
+  height: auto;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
+  margin: 2% 0;
+}
+body .parts3 h3 {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  font-size: 60px;
+  font-family: specialFont;
+  font-weight: 100;
+  margin: 1% 0 3% 0;
+}
+body .parts3 .container-section-3 {
+  height: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 5em 1em black;
+  padding: 2% 0;
+}
+body .parts3 .container-section-3 .text-container-section-3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: spa;
+}
+body .parts3 .container-section-3 .text-container-section-3 h4 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  padding-top: 15%;
+  font-family: fontText;
+  color: #fff;
+  letter-spacing: 3px;
+}
+body .parts3 .container-section-3 .text-container-section-3 .green-link {
+  width: 50%;
+  font-family: "Courier New", Courier, monospace;
+  margin: 6% 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #111;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+body .parts3 .container-section-3 .promotion {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  color: #fff;
+  padding: 0 5%;
+  text-align: center;
+  font-family: fontText;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+body .parts4 {
+  background-image: linear-gradient(#6A6A6A, #8D8D8D);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .parts4 .subtitle {
+  padding-top: 1.2em;
 }/*# sourceMappingURL=styles.css.map */
