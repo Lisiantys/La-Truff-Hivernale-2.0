@@ -122,9 +122,111 @@ body{
 
      //CLASSE MULTIPLES A METTRE DANS PLACE HOLDER
 
-    .parts1{
+
+     .parts1{
         @extend %parts-styles;
         background-image: $part-1-bg;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+        .subtitle{
+            @extend %subtitle-styles;
+        }
+
+        .container-parent{
+            display: flex;
+          
+            align-items: center;
+            margin: auto;
+            justify-content: space-evenly;
+
+            article{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 50%;
+                color: #fff;
+                padding: 0 5%;
+                text-align: center;
+                font-family: fontText;
+                line-height: 50px;
+                letter-spacing: 1px;
+                font-size: 19px;
+
+                h3{
+                    padding: 2% 0;
+                    font-size: 28px;
+                    width: 100%;
+                }
+
+                p{
+                    text-align: center;
+                    width: 79%;
+                    color: rgb(214, 213, 213);
+
+                    strong{
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+        
+       
+            img {
+                max-width: 95%;
+            }
+            
+            .gallery {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: min(650px, 100%);
+                height: 600px;
+                
+                
+
+                &__img {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                opacity: 0;
+                transform: translate(-50%, -50%);
+                transition: opacity 0.3s ease-in-out;
+                }
+                
+                &__thumb {
+                padding-top: 6px;
+                margin: 6px;
+                
+                }
+                
+                &__selector {
+                position: absolute;
+                opacity: 0;
+            
+                visibility: hidden;
+                
+                    &:checked {
+                        + .gallery__img {
+                        opacity: 1;
+                        }
+                        ~ .gallery__thumb > img {
+                        box-shadow: 0 0 0 3px #fff;
+                        }
+                    }
+                } 
+            }    
+      
+    }
+
+    .parts2{
+        @extend %parts-styles;
+        background-image: $part-2-bg;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -132,6 +234,7 @@ body{
 
         .subtitle{
             @extend %subtitle-styles;
+            padding-top: 8%;
         }
 
         .ticket-content{
@@ -157,9 +260,9 @@ body{
         }
     }
 
-    .parts2{
+    .parts3{
         @extend %parts-styles;
-        background-image: $part-2-bg;
+        background-image: $part-3-bg;
         width: 100%;
         height: auto;
         display: flex;
@@ -292,9 +395,9 @@ body{
         }
     }
 
-    .parts3{
+    .parts4{
         @extend %parts-styles;
-        background-image: $part-3-bg;
+        background-image: $part-4-bg;
         width: 100%;
         height: auto;
         display: flex;
@@ -344,7 +447,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: spa;
+                
 
                 h4{
                     text-align: center;
@@ -390,9 +493,9 @@ body{
         }
     }
 
-    .parts4{
+    .parts5{
         @extend %parts-styles;
-        background-image: $part-4-bg;
+        background-image: $part-5-bg;
         width: 100%;
         height: auto;
         display: flex;
@@ -418,42 +521,27 @@ body{
 
     }
 
-    .parts5{
-    @extend %parts-styles;
-        background-image: $part-5-bg;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-       
-
-
-        .subtitle{
-            @extend %subtitle-styles;
-            padding-top: 1.2em;
-        }
-
-       
-    }
+    
 
     .parts6{
         @extend %parts-styles;
             background-image: $part-6-bg;
             width: 100%;
-            height: 100vh;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding-bottom: 5%;
+            padding: 5% 0 5% 0;
+          
            
     
     
             .subtitle{
                 @extend %subtitle-styles;
-                padding-top: 1.2em;
+                padding-bottom: 5%;
+              
+                
             }
 
             .info-contact-container{
@@ -464,7 +552,7 @@ body{
            
                 width: min(1224px, 100%);
                 height: auto;
-                margin: 2% 0 20% 0;
+               
 
                  
 
@@ -541,7 +629,7 @@ body{
                     position: absolute;
                     height: 300px;
                     width: 300px;
-                    top: 67.3%;
+                    top: 67.4%;
                     left: 83.7%;
                     box-shadow: 1em 10px  #111;
                     transform: translate(-50%, -50%);
