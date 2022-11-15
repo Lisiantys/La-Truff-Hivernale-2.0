@@ -1,9 +1,9 @@
-body .parts6, body .parts5, body .parts4, body .parts3, body .parts2, body .parts1 {
+body .parts7, body .parts6, body .parts5, body .parts4, body .parts3, body .parts2, body .parts1 {
   width: 100%;
   height: auto;
 }
 
-body .parts6 .subtitle, body .parts5 .subtitle, body .parts4 .subtitle, body .parts3 .subtitle, body .parts2 .subtitle, body .parts1 .subtitle {
+body .parts7 .subtitle, body .parts6 .subtitle, body .parts5 .subtitle, body .parts4 .subtitle, body .parts3 .subtitle, body .parts2 .subtitle, body .parts1 .subtitle {
   width: 100%;
   font-size: 100px;
   font-weight: 100;
@@ -137,7 +137,6 @@ body .parts1 .container-parent article h3 {
   width: 100%;
 }
 body .parts1 .container-parent article p {
-  text-align: center;
   width: 79%;
   color: rgb(214, 213, 213);
 }
@@ -512,10 +511,64 @@ body .parts6 .info-contact-container .color-black-border {
   box-shadow: 1em 10px #111;
   transform: translate(-50%, -50%);
 }
+body .parts7 {
+  background-image: linear-gradient(#DCDCDC, #FFFFFF);
+  background-color: red;
+  position: relative;
+}
+body .parts7 .subtitle {
+  padding-bottom: 5%;
+  color: #111;
+}
+body .parts7 .container-partner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .parts7 .container-partner .text-partner {
+  color: #111;
+  padding: 0 5%;
+  text-align: center;
+  font-family: fontText;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-size: 26px;
+  text-decoration: underline;
+}
+body .parts7 .container-partner .text-partner strong {
+  font-size: 28px;
+}
+body .parts7 .container-partner .partner-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .parts7 .container-partner .partner-link a {
+  width: 50%;
+  font-family: "Courier New", Courier, monospace;
+  margin: 6% 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #111;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+body .parts7 .moto-bg {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
 body footer {
+  margin-top: 10%;
   width: 100%;
   background-color: #fff;
   height: 7vh;
+  box-shadow: 0px -1px 4px black;
 }
 body footer .list {
   height: 100%;

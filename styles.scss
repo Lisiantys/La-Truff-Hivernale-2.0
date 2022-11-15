@@ -164,7 +164,6 @@ body{
                 }
 
                 p{
-                    text-align: center;
                     width: 79%;
                     color: rgb(214, 213, 213);
 
@@ -533,15 +532,10 @@ body{
             align-items: center;
             flex-direction: column;
             padding: 5% 0 5% 0;
-          
-           
-    
-    
+
             .subtitle{
                 @extend %subtitle-styles;
-                padding-bottom: 5%;
-              
-                
+                padding-bottom: 5%;     
             }
 
             .info-contact-container{
@@ -637,12 +631,76 @@ body{
             }    
         }
 
+    .parts7{
+        @extend %parts-styles;
+            background-image: $part-7-bg;
+            background-color: red;
+            position: relative;
+        
+            .subtitle{
+                @extend %subtitle-styles;
+                padding-bottom: 5%;   
+                color: #111;  
+            }
+
+        .container-partner{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .text-partner{
+                color: #111;
+                padding: 0 5%;
+                text-align: center;
+                font-family: fontText;
+                line-height: 50px;
+                letter-spacing: 1px;
+                font-size: 26px;
+                text-decoration: underline;
+
+                strong{
+                    font-size: 28px;
+                }
+            }
+
+            .partner-link{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a{
+                    width: 50%;
+                    font-family:'Courier New', Courier, monospace;
+                    margin: 6% 0;
+                    padding: 20px 0;
+                    text-align: center;
+                    background-color: #111;
+                    font-weight: bold;
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 4px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }  
+        .moto-bg{
+            position: absolute;
+            top: 75%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        } 
+    }        
+
+
+
     footer{
+        margin-top: 10%;
         width: 100%;
         background-color: #fff;
         height: 7vh;
-        
-        
+        box-shadow: 0px -1px  4px black;
+         
         .list{
             height: 100%;
             display: flex;
@@ -659,7 +717,5 @@ body{
                 }
             }
         }
-
     }
-
 }
