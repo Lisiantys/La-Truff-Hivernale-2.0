@@ -1,9 +1,10 @@
-$color-brown: #D1690D ;
-$color-light: #bad1dc;
-$color-dark : #22162B;
-$light-subtitle: #fff;
 
-//Gradient Background
+//Couleurs Text et Fond items
+
+$light-color: #fff;
+$dark-color: #111;
+
+//Gradient Background parts
 
 $part-1-bg: linear-gradient(#000000, #232323); 
 $part-2-bg: linear-gradient(#232323, #464646);  
@@ -12,3 +13,9 @@ $part-4-bg: linear-gradient(#6A6A6A, #8D8D8D);
 $part-5-bg: linear-gradient(#8D8D8D, #B0B0B0);  
 $part-6-bg: linear-gradient(#B0B0B0, #DCDCDC);  
 $part-7-bg: linear-gradient(#DCDCDC, #FFFFFF);  
+
+//MediaQuery
+
+$resp-large-size : "only screen and (max-width: 1024px)";
+$resp-medium-size : "only screen and (max-width: 768px)";
+$resp-small-size : "only screen and (max-width: 425px)";

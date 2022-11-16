@@ -7,7 +7,7 @@ body header nav .menu li a i {
   background-color: #3b5998;
   border-radius: 50px;
   font-size: 25px;
-  color: white;
+  color: #fff;
   cursor: pointer;
   transition: 0.5s;
 }

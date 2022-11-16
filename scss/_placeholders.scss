@@ -9,27 +9,28 @@
     font-weight: 100;
     font-family: specialFont;
     padding: 0.8em 0;
-    color: $light-subtitle;
+    color: $light-color;
     letter-spacing: 10px;
     text-align: center;
+
+    @media #{$resp-large-size} {
+        font-size: 60px;              
+    }
     
 
 }
 
-%titles-services-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 3em 0 1em 0;
-}
-
-%titles-services{
-    margin-top: 5%;
-    font-size: 35px;
-    padding: 0.5em;
-    text-decoration: underline;
+%purchase-links{
+    font-family:'Courier New', Courier, monospace;
+    padding: 20px 0;
+    text-align: center;
+    background-color: $dark-color;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    color: $light-color;
+    text-decoration: none;
 }
 
 %i-styles{
@@ -42,7 +43,7 @@
         background-color: #3b5998;
         border-radius: 50px;
         font-size: 25px;
-        color: white;
+        color: $light-color;
         cursor: pointer;
         transition: 0.5s;
             

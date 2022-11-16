@@ -36,9 +36,6 @@
         <nav>
 
             <!-- 
-            1- //revoir les liens hrefs // revoir mentiens légales nom et prenom = association
-            2-Revoir SCSS
-            3-Mixins + faux selecteurs + variables
             4-Responsives
             5-optimisation img + format
             6-revoir les links
@@ -49,7 +46,7 @@
 
             <!--  Revoir image SVG -->
 
-            <a href="https://latruffhivernale.com" class="a-logo"><img src="img/logo.svg" class="logo" alt="logo" /></a>
+            <a href="https://latruffhivernale.com" class="a-logo"><img src="img/logo.png" class="logo" alt="logo" /></a>
             <ul class="menu">
                 <li><a href="https://latruffhivernale.com/#tickets">Billetterie</a></li>
                 <li><a href="https://latruffhivernale.com/#meal">Restauration</a></li>
@@ -93,23 +90,23 @@
                 <div class="gallery__item">
                     <!-- selecteur -->
                     <input type="radio" id="img-1" checked name="gallery" class="gallery__selector" />
-                    <img class="gallery__img" src="img/2022/night.jpg" alt="" />
-                    <label for="img-1" class="gallery__thumb"><img src="img/2022/night-min.jpg" alt="" /></label>
+                    <img class="gallery__img" src="img/2022/night.jpg" alt="image de camp de nuit" />
+                    <label for="img-1" class="gallery__thumb"><img src="img/2022/night-min.jpg" alt="selecteur image camp de nuit" /></label>
                 </div>
                 <div class="gallery__item">
                     <input type="radio" id="img-2" name="gallery" class="gallery__selector" />
-                    <img class="gallery__img" src="img/2022/landscape.jpg" alt="" />
-                    <label for="img-2" class="gallery__thumb"><img src="img/2022/landscape-min.jpg" alt="" /></label>
+                    <img class="gallery__img" src="img/2022/landscape.jpg" alt="image du paysage" />
+                    <label for="img-2" class="gallery__thumb"><img src="img/2022/landscape-min.jpg" alt="selecteur image du paysage" /></label>
                 </div>
                 <div class="gallery__item">
                     <input type="radio" id="img-3" name="gallery" class="gallery__selector" />
-                    <img class="gallery__img" src="img/2022/day.jpg" alt="" />
-                    <label for="img-3" class="gallery__thumb"><img src="img/2022/day-min.jpg" alt="" /></label>
+                    <img class="gallery__img" src="img/2022/day.jpg" alt="image de camp de jour" />
+                    <label for="img-3" class="gallery__thumb"><img src="img/2022/day-min.jpg" alt="selecteur image du camp de jour" /></label>
                 </div>
                 <div class="gallery__item">
                     <input type="radio" id="img-4" name="gallery" class="gallery__selector" />
-                    <img class="gallery__img" src="img/2022/camp.jpg" alt="" />
-                    <label for="img-4" class="gallery__thumb"><img src="img/2022/camp-min.jpg" alt="" /></label>
+                    <img class="gallery__img" src="img/2022/camp.jpg" alt="image du feu de camp" />
+                    <label for="img-4" class="gallery__thumb"><img src="img/2022/camp-min.jpg" alt="selecteur image feu de camp" /></label>
                 </div>
             </section>
 
@@ -123,7 +120,7 @@
 
         <h2 class="subtitle">Prêt pour l'aventure ?</h2>
         <div class="ticket-content">
-            <img src="img/panneau.png" class="panneau-img" alt="">
+            <img src="img/panneau.png" class="panneau-img" alt="panneau d'information">
 
             <iframe
                 src="https://widget.weezevent.com/ticket/E876522/?code=34615&locale=fr-FR&width_auto=1&color_primary=00AEEF"
@@ -142,13 +139,13 @@
                 <p class="days">Le Vendredi / Samedi / Dimanche</p>
             </div>
             <div class="image">
-                <img src="img/chicken.jpeg" alt="">
+                <img src="img/chicken.jpeg" alt="poulet frites">
             </div>
         </div>
 
         <div class="skewed skewed-left">
             <div class="image">
-                <img src="img/mussels.jpeg" alt="">
+                <img src="img/mussels.jpeg" alt="moule frites">
             </div>
             <div class="text">
                 <h3>Moules Frites</h3>
@@ -162,24 +159,24 @@
                 <p class="days">Le Samedi Soir</p>
             </div>
             <div class="image">
-                <img src="img/lamb.jpeg" alt="">
+                <img src="img/lamb.jpeg" alt="méchoui frites">
             </div>
         </div>
 
-        <a href="https://latruffhivernale.com/#tickets" class="green-link">Reservez maintenant</a>
+        <a href="https://latruffhivernale.com/#tickets" class="purchase-link">Reservez maintenant</a>
     </section>
 
     <section class="parts4" id="travel">
         <h2 class="subtitle">Envie de voyager ?</h2>
 
 
-        <img src="img/travel-transformed.jpeg" class="travel-img" alt="">
+        <img src="img/travel-transformed.jpeg" class="travel-img" alt="musée la rue du temps qui passe">
         <h3>Musée La rue du temps qui passe</h3>
 
         <div class="container-section-3">
             <div class="text-container-section-3">
                 <h4>Nous effecturons une balade Moto en passant par le Musée</h4>
-                <a href="https://latruffhivernale.com/#tickets" class="green-link">Reservez maintenant</a>
+                <a href="https://latruffhivernale.com/#tickets" class="purchase-link">Reservez maintenant</a>
             </div>
 
             <p class="promotion">Au musée, la rue du temps qui passe, à Allas-les-Mines, on est plongé dans le passé.
@@ -198,15 +195,14 @@
 
 
         <div class="container-parent-section-5">
-            <img src="img/groupes.jpeg" class="music-groups" alt="">
+            <img src="img/groupes.jpeg" class="music-groups" alt="groupe de rock snogoo">
             <div class="container-child-section-5">
-                <img src="img/logo-snogoo.jpg" alt="">
+                <img src="img/logo-snogoo.jpg" alt="logo du groupe snogoo">
                 <a href="https://www.facebook.com/snogoo24"><i class="fab fa-facebook-f fa-2x"></i></a>
             </div>
         </div>
 
     </section>
-
 
 
     <section class="parts6" id="infos">
@@ -258,13 +254,10 @@
                     Sauna.</strong><br>
                 Réservation sur site marchand </p>
             <div class="partner-link">
-                <img src="img/BES-logo.png" alt="">
-                <a href="https://bienetresimple.fr/">Visiter le site</a>
+                <img src="img/BES-logo.png" class="logo-img-section-6" alt="logo partenaire Bien être simple ">
+                <a href="https://bienetresimple.fr/" class="purchase-link">Visiter le site</a>
             </div>
         </div>
-
-        <img src="img/moto.png" class="moto-bg" alt="">
-
         <section>
 
             <footer>
