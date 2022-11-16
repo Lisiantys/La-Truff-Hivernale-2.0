@@ -1,0 +1,42 @@
+@import 'scss/_variables.scss';
+@import 'scss/_placeholders.scss';
+@import 'scss/_header.scss';
+@import 'scss/_footer.scss';
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 19px;
+   
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    @include header;
+
+    header{
+        margin-bottom: 10%;
+    }
+
+    h3{
+        padding: 2% 0;
+        font-size: 22px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .subtitle{
+        font-size: 26px;
+       padding: 2% 0;
+    }
+
+    .margin{
+        width: 90%;
+        height: auto;
+        margin: auto
+    }
+    @include footer;
+}

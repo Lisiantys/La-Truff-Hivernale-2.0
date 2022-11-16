@@ -1,0 +1,116 @@
+body header nav .menu li a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  border-radius: 50px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body header nav .menu li a i.fa-facebook-f:hover {
+  background-color: #5777bd;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 19px;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+body header nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 0.5% 5% 0% 5%;
+  z-index: 1;
+}
+body header nav.sticky {
+  background-color: #fff;
+}
+body header nav.sticky ul li a {
+  color: #000;
+  font-weight: 900;
+}
+body header nav .a-logo {
+  width: min(100%, 100px);
+  display: flex;
+  justify-content: center;
+}
+body header nav .a-logo .logo {
+  width: 100px;
+}
+body header nav .menu {
+  width: min(100%, 1024px);
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body header nav .menu li {
+  list-style: none;
+}
+body header nav .menu li a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.6s;
+}
+body header nav .menu li a:hover {
+  font-size: 26px;
+}
+body header {
+  margin-bottom: 10%;
+}
+body h3 {
+  padding: 2% 0;
+  font-size: 22px;
+  width: 90%;
+  margin: auto;
+}
+body .subtitle {
+  font-size: 26px;
+  padding: 2% 0;
+}
+body .margin {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+body footer {
+  margin-top: 10%;
+  width: 100%;
+  background-color: #fff;
+  height: 7vh;
+}
+body footer .list {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body footer .list span {
+  font-family: "Courier New", Courier, monospace;
+  color: #000;
+}
+body footer .list span a {
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=mentions-legales.css.map */

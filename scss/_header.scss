@@ -1,0 +1,69 @@
+@mixin header {
+    
+    header {
+
+        nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 0.5% 5% 0% 5%;
+            z-index: 1;
+    
+            &.sticky{
+                background-color: #fff;
+    
+                ul li a{
+                    color: #000;
+                    font-weight: 900;
+                }
+            }
+    
+            .a-logo{
+                width:min(100%,100px);
+                display: flex;
+                justify-content: center;
+                .logo{
+                    width:100px;
+                }
+            }
+    
+    
+            .menu {
+                width: min(100%, 1024px);
+                margin: auto;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+    
+                li{
+    
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        letter-spacing: 2px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        transition: 0.6s;
+    
+                        &:hover {
+                            font-size: 26px;
+                        }
+
+                        i{
+                            @extend %i-styles;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+

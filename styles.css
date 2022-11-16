@@ -14,6 +14,23 @@ body .parts7 .subtitle, body .parts6 .subtitle, body .parts5 .subtitle, body .pa
   text-align: center;
 }
 
+body .parts6 .info-contact-container .content-info .social a i, body .parts5 .container-parent-section-5 .container-child-section-5 a i, body header nav .menu li a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  border-radius: 50px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .parts6 .info-contact-container .content-info .social a i.fa-facebook-f:hover, body .parts5 .container-parent-section-5 .container-child-section-5 a i.fa-facebook-f:hover, body header nav .menu li a i.fa-facebook-f:hover {
+  background-color: #5777bd;
+}
+
 *, ::before, ::after {
   margin: 0;
   padding: 0;
@@ -22,11 +39,11 @@ body .parts7 .subtitle, body .parts6 .subtitle, body .parts5 .subtitle, body .pa
 
 @font-face {
   font-family: specialFont;
-  src: url(scss/font.ttf);
+  src: url(fonts/font.ttf);
 }
 @font-face {
   font-family: fontText;
-  src: url(scss/Figerona-VF.ttf);
+  src: url(fonts/Figerona-VF.ttf);
 }
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -62,10 +79,11 @@ body header nav .a-logo .logo {
 }
 body header nav .menu {
   width: min(100%, 1024px);
+  margin: auto;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 body header nav .menu li {
   list-style: none;
@@ -410,22 +428,33 @@ body .parts4 .container-section-3 .promotion {
 }
 body .parts5 {
   background-image: linear-gradient(#8D8D8D, #B0B0B0);
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 body .parts5 .subtitle {
   padding-top: 1.2em;
 }
-body .parts5 .music-groups {
+body .parts5 .container-parent-section-5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .parts5 .container-parent-section-5 .music-groups {
   position: relative;
-  width: min(1400px, 100%);
+  width: min(1124px, 100%);
   height: auto;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
   margin: 2% 0;
+}
+body .parts5 .container-parent-section-5 .container-child-section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .parts5 .container-parent-section-5 .container-child-section-5 img {
+  width: 200px;
+  border-radius: 500px;
+}
+body .parts5 .container-parent-section-5 .container-child-section-5 a {
+  text-decoration: none;
 }
 body .parts6 {
   background-image: linear-gradient(#B0B0B0, #DCDCDC);
@@ -475,22 +504,6 @@ body .parts6 .info-contact-container .content-info .info .info-text {
 body .parts6 .info-contact-container .content-info .social a {
   text-decoration: none;
 }
-body .parts6 .info-contact-container .content-info .social a i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #3b5998;
-  border-radius: 50px;
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-}
-body .parts6 .info-contact-container .content-info .social a i.fa-facebook-f:hover {
-  background-color: #5777bd;
-}
 body .parts6 .info-contact-container .map {
   display: flex;
   align-items: center;
@@ -513,7 +526,6 @@ body .parts6 .info-contact-container .color-black-border {
 }
 body .parts7 {
   background-image: linear-gradient(#DCDCDC, #FFFFFF);
-  background-color: red;
   position: relative;
 }
 body .parts7 .subtitle {
@@ -568,7 +580,6 @@ body footer {
   width: 100%;
   background-color: #fff;
   height: 7vh;
-  box-shadow: 0px -1px 4px black;
 }
 body footer .list {
   height: 100%;
