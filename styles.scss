@@ -33,7 +33,7 @@ body{
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('img/kevin-erdvig-k7fUP9RQj3Y-unsplash.jpg');
+        background-image: url('img/background-main.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -674,7 +674,7 @@ body{
                     box-shadow: 1em 10px  $dark-color;
                     transform: translate(-50%, -50%);
 
-                   @media screen and (max-width: 1180px) {
+                   @media screen and (max-width: 1310px) {
                         display: none;
                    }
                 }
@@ -688,6 +688,7 @@ body{
         @extend %parts-styles;
             background-image: $part-7-bg;
             position: relative;
+            padding-bottom: 10%;
         
             .subtitle{
                 @extend %subtitle-styles;

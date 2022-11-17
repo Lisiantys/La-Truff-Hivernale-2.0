@@ -1,7 +1,6 @@
 @mixin footer {
 
     footer{
-        margin-top: 10%;
         width: 100%;
         background-color: #fff;
         height: 7vh;
@@ -16,9 +15,10 @@
                 flex-direction: column;        
             }
            
-            span{
+            li{
                 font-family:'Courier New', Courier, monospace;
-                color: #000;
+                color: $dark-color;
+                list-style: none;
 
                 @media #{$resp-medium-size} {
                     font-size: 11px;      
