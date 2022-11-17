@@ -25,6 +25,7 @@
     
             .a-logo{
                 width:min(100%,100px);
+                padding-right: 5%;
                 display: flex;
                 justify-content: center;
                 .logo{
@@ -54,6 +55,14 @@
     
                         &:hover {
                             font-size: 26px;
+                        }
+
+                        @media #{$resp-large-size} {
+                             font-size: 17px;    
+                             
+                             &:hover {
+                                font-size: 20px;
+                            }
                         }
 
                         i{

@@ -14,10 +14,16 @@
     text-align: center;
 
     @media #{$resp-large-size} {
-        font-size: 60px;              
+        font-size: 70px;              
     }
-    
 
+    @media #{$resp-medium-size} {
+        font-size: 65px;              
+    }
+
+    @media #{$resp-small-size} {
+        font-size: 40px;              
+    }
 }
 
 %purchase-links{

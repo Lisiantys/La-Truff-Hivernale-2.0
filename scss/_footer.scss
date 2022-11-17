@@ -11,10 +11,18 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            
+            @media #{$resp-large-size} {
+                flex-direction: column;        
+            }
            
             span{
                 font-family:'Courier New', Courier, monospace;
                 color: #000;
+
+                @media #{$resp-medium-size} {
+                    font-size: 11px;      
+                }
     
                 a{
                     text-decoration: none;
