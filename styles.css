@@ -272,6 +272,11 @@ body .parts1 .container-parent article {
     width: min(1024px, 95%);
   }
 }
+@media only screen and (max-width: 425px) {
+  body .parts1 .container-parent article {
+    padding: 0;
+  }
+}
 body .parts1 .container-parent article h3 {
   padding: 2% 0;
   font-size: 28px;
@@ -280,6 +285,7 @@ body .parts1 .container-parent article h3 {
 @media only screen and (max-width: 425px) {
   body .parts1 .container-parent article h3 {
     font-size: 22px;
+    font-weight: bold;
   }
 }
 body .parts1 .container-parent article p {
@@ -293,7 +299,7 @@ body .parts1 .container-parent article p {
   }
 }
 body .parts1 .container-parent article p strong {
-  font-size: 21px;
+  font-size: 22px;
 }
 body .parts1 img {
   max-width: 95%;

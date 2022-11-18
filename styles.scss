@@ -114,13 +114,18 @@ body{
                     width: min(1024px, 95%);      
                 }
 
+                @media #{$resp-small-size} {
+                    padding: 0;        
+                }
+
                 h3{
                     padding: 2% 0;
                     font-size: 28px;
                     width: 100%;
 
                     @media #{$resp-small-size} {
-                        font-size: 22px;        
+                        font-size: 22px;    
+                        font-weight: bold;
                     }
                 }
 
@@ -133,7 +138,7 @@ body{
                         font-size: 17px;      
                     }
                     strong{
-                        font-size: 21px;
+                        font-size: 22px;
                     }
                 }
             }
