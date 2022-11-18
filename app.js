@@ -5,6 +5,9 @@ window.addEventListener("scroll", () => {
   nav.classList.toggle("sticky", window.scrollY > 100);
 }); //Fin Header Sticky
 
+
+//Début Scroll Menu
+
 const menu = document.querySelector(".menu");
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -14,7 +17,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
-});
+}); //Fin Scroll Menu
+
 
 //Début Hamburger
 
@@ -30,6 +34,6 @@ document.querySelectorAll(".nav-link").forEach(n =>
 n.addEventListener("click", () =>{
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}))
+})); //Fin Hamburger
 
-//Fin Hamburger
+

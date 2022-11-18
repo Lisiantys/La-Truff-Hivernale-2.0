@@ -19,6 +19,11 @@
     src: url(fonts/Figerona-VF.ttf);
 }
 
+@font-face {
+    font-family: fontFacebookGroup;
+    src: url(fonts/ArtificialIntelligence_PERSONAL_USE_ONLY.otf);
+}
+
 body{
     font-family: "Josefin Sans", sans-serif;
     background-color: #000;
@@ -513,17 +518,18 @@ body{
         .container-parent-section-5{
 
             display: flex;
-            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            
 
             @media #{$resp-large-size} {
-                flex-direction: column;
-                align-items: center;
-                
+                align-items: center;   
             }
         
             .music-groups{
                 position: relative;
-                width: min(1124px, 70%);
+                background-color: red;
+                width: 80%;
                 height: auto;
                 box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
                 margin: 2% 0;
@@ -535,7 +541,7 @@ body{
 
             .container-child-section-5{
                 display: flex;
-                flex-direction: column;
+                width: 50%;
                 align-items: center;
                 justify-content: space-evenly;
 
@@ -553,13 +559,50 @@ body{
                     }
                 }
 
-                a{
-                    text-decoration: none;
-
-                    i{
-                        @extend %i-styles;
+                h3{
+                    text-align: center;
+                    width: 280px;
+                    border-radius: 20px;
+                    box-shadow: inset 1em 1em  #5777bd;
+                    border: 2px double #3b5998;
+                    font-family: fontFacebookGroup;
+                    font-size: 70px;
+                    background-color: #3b5998;
+                    font-weight: 100;
+                    letter-spacing: 3px;
+                    
+                    margin: 4% 0;
+    
+                    @media #{$resp-medium-size} {
+                        width: 150px;
+                        font-size: 30px;        
                     }
-                }                
+
+                    a{
+                        text-decoration: none;
+                        color: $light-color;
+                    }
+                }    
+            }
+
+            p{
+                color: $light-color;
+                width: min(1150px, 95%);
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                background-color: #00000016;
+                border-radius: 20px;
+                line-height: 30px;
+                padding: 0.5% 0.5%;
+
+                @media #{$resp-medium-size} {
+                    font-size: 25px;
+                }
+
+                @media #{$resp-small-size} {
+                    font-size: 20px;       
+                }
             }
         }  
     }
