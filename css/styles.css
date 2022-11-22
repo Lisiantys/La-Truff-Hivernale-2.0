@@ -7,7 +7,7 @@ body .parts7 .subtitle, body .parts6 .subtitle, body .parts5 .subtitle, body .pa
   width: 100%;
   font-size: 100px;
   font-weight: 100;
-  font-family: specialFont;
+  font-family: specialFont, sans-serif;
   padding: 0.8em 0;
   color: #fff;
   letter-spacing: 10px;
@@ -30,7 +30,7 @@ body .parts7 .subtitle, body .parts6 .subtitle, body .parts5 .subtitle, body .pa
 }
 
 body .parts7 .container-partner .partner-link .purchase-link, body .parts4 .container-section-3 .text-container-section-3 .purchase-link, body .parts3 .purchase-link {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace, sans-serif;
   padding: 20px 0;
   text-align: center;
   background-color: #111;
@@ -108,9 +108,12 @@ body header nav .a-logo {
   padding-right: 5%;
   display: flex;
   justify-content: center;
+  width: auto;
+  height: auto;
 }
 body header nav .a-logo .logo {
   width: 100px;
+  height: auto;
 }
 body header nav .menu {
   width: min(100%, 1024px);
@@ -217,7 +220,7 @@ body .main .main-title {
   left: 50%;
   font-size: 100px;
   color: rgba(255, 255, 255, 0.993);
-  font-family: specialFont;
+  font-family: specialFont, sans-serif;
   font-weight: 100;
   transform: translate(-50%, 50%);
 }
@@ -262,7 +265,7 @@ body .parts1 .container-parent article {
   color: #fff;
   padding: 0 5%;
   text-align: center;
-  font-family: fontText;
+  font-family: fontText, sans-serif;
   line-height: 50px;
   letter-spacing: 1px;
   font-size: 19px;
@@ -300,6 +303,8 @@ body .parts1 .container-parent article p {
 }
 body .parts1 .container-parent article p strong {
   font-size: 22px;
+  font-weight: bolder;
+  color: #fff;
 }
 body .parts1 img {
   max-width: 95%;
@@ -432,7 +437,7 @@ body .parts3 .skewed .text h3 {
   width: 95%;
   margin: auto;
   font-size: 100px;
-  font-family: specialFont;
+  font-family: specialFont, sans-serif;
   font-weight: 100;
   padding-top: 5%;
 }
@@ -552,7 +557,7 @@ body .parts4 h3 {
   width: 100%;
   margin: auto;
   font-size: 60px;
-  font-family: specialFont;
+  font-family: specialFont, sans-serif;
   font-weight: 100;
   margin: 1% 0 3% 0;
 }
@@ -590,10 +595,9 @@ body .parts4 .container-section-3 .text-container-section-3 h4 {
   width: 100%;
   margin: auto;
   font-size: 40px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   padding-top: 15%;
-  font-family: fontText;
+  font-family: fontText, sans-serif;
   color: #fff;
   letter-spacing: 3px;
 }
@@ -618,7 +622,7 @@ body .parts4 .container-section-3 .promotion {
   color: #fff;
   padding: 0 5%;
   text-align: center;
-  font-family: fontText;
+  font-family: fontText, sans-serif;
   line-height: 50px;
   letter-spacing: 1px;
   font-size: 19px;
@@ -687,7 +691,7 @@ body .parts5 .container-parent-section-5 .container-child-section-5 h3 {
   border-radius: 20px;
   box-shadow: inset 1em 1em #5777bd;
   border: 2px double #3b5998;
-  font-family: fontFacebookGroup;
+  font-family: fontFacebookGroup, sans-serif;
   font-size: 70px;
   background-color: #3b5998;
   font-weight: 100;
@@ -776,7 +780,7 @@ body .parts6 .info-contact-container .content-info .info .info-text {
   text-decoration: none;
   color: #fff;
   font-size: 24px;
-  font-family: fontText;
+  font-family: fontText, sans-serif;
 }
 @media only screen and (max-width: 425px) {
   body .parts6 .info-contact-container .content-info .info .info-text {
@@ -850,7 +854,7 @@ body .parts7 .container-partner .text-partner {
   width: min(1100px, 100%);
   padding: 4% 5%;
   text-align: center;
-  font-family: fontText;
+  font-family: fontText, sans-serif;
   line-height: 50px;
   letter-spacing: 1px;
   font-size: 26px;

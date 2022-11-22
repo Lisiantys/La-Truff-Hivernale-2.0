@@ -60,9 +60,12 @@ body header nav .a-logo {
   padding-right: 5%;
   display: flex;
   justify-content: center;
+  width: auto;
+  height: auto;
 }
 body header nav .a-logo .logo {
   width: 100px;
+  height: auto;
 }
 body header nav .menu {
   width: min(100%, 1024px);

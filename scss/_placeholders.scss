@@ -7,7 +7,7 @@
     width: 100%;
     font-size: 100px;
     font-weight: 100;
-    font-family: specialFont;
+    font-family: specialFont, sans-serif;
     padding: 0.8em 0;
     color: $light-color;
     letter-spacing: 10px;
@@ -27,7 +27,7 @@
 }
 
 %purchase-links{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace, sans-serif;
     padding: 20px 0;
     text-align: center;
     background-color: $dark-color;

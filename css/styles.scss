@@ -1,7 +1,7 @@
-@import 'scss/_variables.scss';
-@import 'scss/_placeholders.scss';
-@import 'scss/_header.scss';
-@import 'scss/_footer.scss';
+@import '../scss/_variables.scss';
+@import '../scss/_placeholders.scss';
+@import '../scss/_header.scss';
+@import '../scss/footer';
 
 *, ::before, ::after{
     margin: 0;
@@ -53,7 +53,7 @@ body{
             left: 50%;
             font-size: 100px;
             color: rgba(255, 255, 255, 0.993);
-            font-family: specialFont;
+            font-family: specialFont, sans-serif;
             font-weight: 100;
             transform: translate(-50%, 50%);
 
@@ -105,7 +105,7 @@ body{
                 color: $light-color;
                 padding: 0 5%;
                 text-align: center;
-                font-family: fontText;
+                font-family: fontText, sans-serif;
                 line-height: 50px;
                 letter-spacing: 1px;
                 font-size: 19px;
@@ -139,6 +139,8 @@ body{
                     }
                     strong{
                         font-size: 22px;
+                        font-weight: bolder;
+                        color: $light-color;
                     }
                 }
             }
@@ -298,7 +300,7 @@ body{
                     width: 95%;
                     margin: auto;
                     font-size: 100px;
-                    font-family: specialFont;
+                    font-family: specialFont, sans-serif;
                     font-weight: 100;
                     padding-top: 5%;
 
@@ -427,7 +429,7 @@ body{
             width: 100%;
             margin: auto;
             font-size: 60px;
-            font-family: specialFont;
+            font-family: specialFont, sans-serif;
             font-weight: 100;
             margin: 1% 0 3% 0;
 
@@ -464,10 +466,9 @@ body{
                     width: 100%;
                     margin: auto;
                     font-size: 40px;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     font-weight: bold;
                     padding-top: 15%;
-                    font-family: fontText;
+                    font-family: fontText, sans-serif;
                     color: $light-color;
                     letter-spacing: 3px;
 
@@ -494,7 +495,7 @@ body{
                 color: $light-color;
                 padding: 0 5%;
                 text-align: center;
-                font-family: fontText;
+                font-family: fontText, sans-serif;
                 line-height: 50px;
                 letter-spacing: 1px;
                 font-size: 19px;
@@ -570,7 +571,7 @@ body{
                     border-radius: 20px;
                     box-shadow: inset 1em 1em  #5777bd;
                     border: 2px double #3b5998;
-                    font-family: fontFacebookGroup;
+                    font-family: fontFacebookGroup, sans-serif;
                     font-size: 70px;
                     background-color: #3b5998;
                     font-weight: 100;
@@ -668,7 +669,7 @@ body{
                             text-decoration: none;
                             color: $light-color;
                             font-size: 24px;
-                            font-family: fontText;
+                            font-family: fontText, sans-serif;
 
                             @media #{$resp-small-size} {
                                 font-size: 18px;     
@@ -758,7 +759,7 @@ body{
                 width: min(1100px, 100%);
                 padding: 4% 5%;
                 text-align: center;
-                font-family: fontText;
+                font-family: fontText, sans-serif;
                 line-height: 50px;
                 letter-spacing: 1px;
                 font-size: 26px;
